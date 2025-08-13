@@ -1,0 +1,6 @@
+timestamp,phase,note,dataset,task,n_features,train,val,test,model,test_accuracy,test_f1,best_ckpt,fig_loss,fig_metric,test_mae,test_rmse
+20250813-102110,sanity,logger test,,,,,,,,,,,,,,
+20250813-102412,data_prep,,breast_cancer,clf,30.0,398.0,85.0,86.0,,,,,,,,
+20250813-102417,data_prep,,california_housing,reg,8.0,14448.0,3096.0,3096.0,,,,,,,,
+20250813-103739,baseline,,breast_cancer,clf,,,,,"FFNN_Classifier[64,64,32]",0.9534883720930232,0.9629629629629628,c:\Users\Admin\Desktop\ffnn-healing\models\clf_breast_cancer_baseline_20250813-103737_best.pt,c:\Users\Admin\Desktop\ffnn-healing\figures\clf_breast_cancer_baseline_loss.png,c:\Users\Admin\Desktop\ffnn-healing\figures\clf_breast_cancer_baseline_accuracy.png,,
+20250813-104136,baseline,,california_housing,reg,,,,,"FFNN_Regression[128,64,32]",,,c:\Users\Admin\Desktop\ffnn-healing\models\reg_california_baseline_20250813-104035_best.pt,c:\Users\Admin\Desktop\ffnn-healing\figures\reg_california_baseline_loss.png,c:\Users\Admin\Desktop\ffnn-healing\figures\reg_california_baseline_RMSE.png,0.37485018372535706,0.5373355181330539

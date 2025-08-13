@@ -1,12 +1,23 @@
-@"
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# VS Code
 .vscode/
+
+# Data & artifacts (we re-create them locally)
 data/
 models/
-outputs/
-logs/
-experiments/runs/
-"@ > .gitignore
+figures/
+experiments/
+runs/
+*.pt
+*.npy
+*.joblib
+*.ckpt
+*.png
 
+# Optional: OS noise
+.DS_Store
+Thumbs.db
