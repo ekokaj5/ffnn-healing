@@ -6,18 +6,47 @@ __pycache__/
 # VS Code
 .vscode/
 
-# Data & artifacts (we re-create them locally)
-data/
-models/
-figures/
-experiments/
-runs/
+# Large/reproducible artifacts (ignored), but allow README/.gitkeep
+data/**
+!data/README.md
+!data/.gitkeep
+
+models/**
+!models/README.md
+!models/.gitkeep
+
+experiments/**
+!experiments/README.md
+!experiments/.gitkeep
+
+outputs/**
+!outputs/README.md
+!outputs/.gitkeep
+
+logs/**
+!logs/README.md
+!logs/.gitkeep
+
+# Keep figures and results (plots & tables)
+figures/**
+!figures/**/*.png
+!figures/**/*.csv
+!figures/README.md
+!figures/.gitkeep
+
+results/**
+!results/**/*.png
+!results/**/*.csv
+!results/**/*.json
+!results/README.md
+!results/.gitkeep
+
+# Model binaries (catch-alls)
 *.pt
 *.npy
 *.joblib
 *.ckpt
-*.png
 
-# Optional: OS noise
+# OS noise
 .DS_Store
 Thumbs.db
